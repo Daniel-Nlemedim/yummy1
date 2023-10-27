@@ -21,7 +21,6 @@ btnOpenModal.addEventListener("click", openModal);
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
-
 //for the slide show
 let slideIndex = 0;
 showSlides();
