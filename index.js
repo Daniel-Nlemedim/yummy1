@@ -12,16 +12,14 @@ const openModal = function () {
   overlay.classList.remove("hidden");
 };
 
-const closeModal = function() {
+const closeModal = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
-}
+};
 
 btnOpenModal.addEventListener("click", openModal);
- btnCloseModal.addEventListener("click", closeModal );
- overlay.addEventListener("click", closeModal);
-
-
+btnCloseModal.addEventListener("click", closeModgial);
+overlay.addEventListener("click", closeModal);
 
 
 //for the slide show
