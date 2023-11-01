@@ -537,6 +537,9 @@ footer{
   text-align: center;
   background-color: #717171;
 }
+i{
+  display: inline-block;
+}
 
 /* mobile phone view */
 @media screen and (max-width: 480px) {
