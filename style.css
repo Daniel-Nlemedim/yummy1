@@ -44,11 +44,11 @@ li{
 a {
   color: rgba(146, 122, 122, 0.678);
   font-weight: bold;
+  transition: all 0.4s;
 }
 a:hover {
   color: black;
-  text-decoration: underline rgba(172, 30, 30, 0.897) 3px;
-  transition: 0.4s ;
+  text-decoration: underline rgba(172, 30, 30, 0.897) 2px;
 }
 
 #btn {
@@ -532,12 +532,43 @@ span {
 } */
 
 /* footer */
-.footer{
+.footer {
   width: 100%;
   text-align: center;
-  background-color: #717171;
+  background-color: rgba(175, 162, 162, 0.315);
+  font-family:  sans-serif;
+  
 }
 
+.footer .row a{
+  text-decoration: none;
+  transition: 0.5s ;
+}
+
+.footer-icon{
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.footer-icon-li{
+  display: inline-block;
+}
+
+.footer-ul{
+  list-style: none;
+  padding: -40px;
+  font-size: 15px
+  
+}
+.footer-li{
+  display: inline-block;
+}
+.copyright{
+  display: inline-block;
+  font-size: 13px;
+  color: #444;
+  padding-bottom: 20px;
+}
 
 /* mobile phone view */
 @media screen and (max-width: 480px) {
