@@ -38,3 +38,16 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
+//sticky navbar
+const navbar = document.querySelector('.navbar');
+const sticky = navbar.offsetTop;
+const stickyNavbar = function(){
+  if(window.scroll >= sticky){
+    navbar.classList.add('sticky')
+  }else{
+    navbar.classList.remove('sticky')
+  }
+}
+document.addEventListener('scroll',stickyNavbar)
+

@@ -40,7 +40,14 @@ li{
   padding: 10px;
   
 } */
-
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content{
+  padding-top: 60px;
+}
 a {
   color: rgba(146, 122, 122, 0.678);
   font-weight: bold;
