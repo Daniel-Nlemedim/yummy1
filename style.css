@@ -16,7 +16,6 @@
 
 ul{
  padding: 20px;
- transition: all 0.3 ease-in;
 }
 
 li{
@@ -35,11 +34,11 @@ li{
   font-size: 20px;
 } */
 /* 
- li{
+li{
   display: inline-block;
   list-style-type: none ;
   padding: 10px; 
- 
+  
 }  */
 
 /* #other-list{
@@ -55,6 +54,7 @@ a{
 a:hover{
   color: black;
   text-decoration: underline rgba(172, 30, 30, 0.897) 3px;
+  transition: all 0.3 ease-in;
 }
 
 #btn{
