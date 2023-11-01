@@ -10,13 +10,12 @@
   padding-left: 20px;
   font-size: 30px;
 }
+.navbar {
+  transition: all 0.4s ease;
+}
 
 ul {
   padding: 20px;
-}
-
-.ease {
-  transition: all 0.4s ease;
 }
 
 li {
@@ -54,10 +53,6 @@ a:hover {
   color: black;
   text-decoration: underline rgba(172, 30, 30, 0.897) 3px;
 }
-
-/* .testing{
-  border-bottom: 1px solid #373636;
-} */
 
 #btn {
   padding-top: 10px;
