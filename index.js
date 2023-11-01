@@ -40,14 +40,14 @@ function showSlides() {
 }
 
 //sticky navbar
-const navbar = document.querySelector('.navbar');
+window.onscroll = function() {stickyNavbar()}
 const sticky = navbar.offsetTop;
-const stickyNavbar = function(){
-  if(window.scroll >= sticky){
+function stickyNavbar(){
+  if(window.pageYOffset >= sticky){
     navbar.classList.add('sticky')
   }else{
     navbar.classList.remove('sticky')
   }
 }
-document.addEventListener('scroll',stickyNavbar)
+
 
