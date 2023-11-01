@@ -16,6 +16,7 @@
 
 ul{
  padding: 20px;
+ transition: all 0.3 ease-in;
 }
 
 li{
