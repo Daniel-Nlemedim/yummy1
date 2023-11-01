@@ -54,7 +54,7 @@ a{
 a:hover{
   color: black;
   text-decoration: underline rgba(172, 30, 30, 0.897) 3px;
-  transition: all 0.3 ease-in;
+  transition: all 0.3s ease-in;
 }
 
 #btn{
