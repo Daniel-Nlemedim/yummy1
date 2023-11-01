@@ -48,7 +48,7 @@ a {
 a:hover {
   color: black;
   text-decoration: underline rgba(172, 30, 30, 0.897) 3px;
-  transition: all 0.4s ease;
+  transition: 0.4s ;
 }
 
 #btn {
@@ -532,14 +532,12 @@ span {
 } */
 
 /* footer */
-footer{
+.footer{
   width: 100%;
   text-align: center;
   background-color: #717171;
 }
-i{
-  display: inline-block;
-}
+
 
 /* mobile phone view */
 @media screen and (max-width: 480px) {
