@@ -10,10 +10,7 @@
   padding-left: 20px;
   font-size: 30px;
 }
-.navbar-item{
-  transition: all 0.4s ease;
-  background-color: red;
-}
+
 ul {
   padding: 20px;
 }
@@ -47,11 +44,11 @@ li{
 a {
   color: rgba(146, 122, 122, 0.678);
   font-weight: bold;
-  color: red;
 }
 a:hover {
   color: black;
   text-decoration: underline rgba(172, 30, 30, 0.897) 3px;
+  background-color: red;
 }
 
 #btn {
