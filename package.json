@@ -1,0 +1,22 @@
+{
+  "name": "yummy.",
+  "version": "1.0.0",
+  "description": "using npm for color palate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Nlemedim/yummy1.git"
+  },
+  "author": "nzube",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-Nlemedim/yummy1/issues"
+  },
+  "homepage": "https://github.com/Daniel-Nlemedim/yummy1#readme",
+  "dependencies": {
+    "google-palette": "^1.1.1"
+  }
+}
