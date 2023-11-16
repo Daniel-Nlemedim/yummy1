@@ -496,6 +496,36 @@ p {
   display: none;
 }
 
+/* Drop-down */
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* mobile phone view */
 @media screen and (max-width: 480px) {
   body {
