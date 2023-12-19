@@ -25,7 +25,7 @@
   <!-- Nav Bar -->
 
   <nav class="navbar navbar-expand-lg navbar-light navigation ">
-    <a class="navbar-brand"><i class="fa fa-tint"></i> Yummy.</a>
+    <a class="navbar-brand"><i class="fa fa-tint"></i> Yummy<span id="dot">.</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="sidebar"
       data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -68,8 +68,9 @@
     <div id="text">
       <img src="./image/img.jpg" alt="meal" id="img1">
       <h2>Enjoy Your Healthy <br> Delicious Food</h2>
-      <p>A place where your healthy feeding is assured prepared by one <br> of the best chef around the world. We serve
+      <p id="content-p">A place where your healthy feeding is assured prepared by one <br> of the best chef around the world. We serve
         top class delicacy, <br> and mouth watery meals.</p>
+
       <button id="btn2" class="show-modal"> Book a Table</button>
 
       <div class="modal hidden">
@@ -79,171 +80,172 @@
       </div>
       <div class="overlay hidden"></div>
 
-      <i class="fa fa-play-circle-o " id="font"> Watch video</i>
+      <i class="fa fa-play-circle-o " id="font btn2"> Watch video</i>
 
     </div>
 
   </div>
 
-  <div id="'main-card-div'">
+  <div id="main-card-div">
 
     <div id="card">
       <p id="card-p">ABOUT US</p>
       <p id="card-h2">LEARN MORE <span id="about">ABOUT US</span></p>
 
       <div id="container-div">
-        <div id="container1">
-          <img src="./image/img2.jpg" alt="photo" id="img2">
-          <h4 id="container1-h4"><b>Wooden inspired concept</b></h4>
-          <p id="container1-p">Califonia, USA.
-            <br>
-            <i class="fa fa-phone"> +123-082237432, Andre.</i>
-          </p>
-        </div>
+        <ul>
 
-        <div id="card" class="card2">
-          <div id="container2">
-            <img src="./image/img3.jpg" alt="photo" id="img3">
+          <li id="container-list">
+            <img src="./image/img2.jpg" alt="photo" id="container-img">
+            <h4 id="container1-h4"><b>Wooden inspired concept</b></h4>
+            <p id="container1-p">Califonia, USA.
+              <br>
+              <i class="fa fa-phone"> +123-082237432, Andre.</i>
+            </p>
+          </li>
+
+          <li id="container-list">
+            <img src="./image/img3.jpg" alt="photo" id="container-img">
             <h4 id="container1-h4"><b> Modern inspired concept</b></h4>
             <p id="container1-p">Louisiana, USA.
               <br>
               <i class="fa fa-phone"> +123-072243831, Alisa.</i>
             </p>
-          </div>
-        </div>
+          </li>
 
-        <div id="card">
-          <div id="container3">
-            <img src="./image/img4.png" alt="photo" id="img4">
+          <li id="container-list">
+            <img src="./image/img4.png" alt="photo" id="container-img">
             <h4 id="container1-h4"><b>An Italian inspired concept</b></h4>
             <p id="container1-p">Milian, Italy.
               <br>
               <i class="fa fa-phone"> +39-082237432, Alberto.</i>
             </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- menu section -->
-
-    <section id="menu">
-      <div class="row">
-        <ul>
-
-          <li id="menu-list">
-            <img src="./image/menu_img1.jpeg" alt="" id="menu-img">
-            <h4 id="menu-list-h4">Applebee's</h4>
-            <p id="menu-list-p"> For calorie-appropriate portions, look for Applebee's Lighter Fare, which are all under
-              700 calories per dish. Among the
-              options are Cedar-Grilled Lemon Chicken and Thai Shrimp Salad.</p>
-          </li>
-
-          <li id="menu-list">
-            <img src="./image/menu_img2.jpeg" alt="" id="menu-img">
-            <h4 id="menu-list-h4">Buffalo Wild Wings</h4>
-            <p id="menu-list-p">Lucky for you, they may just be the healthiest thing on the menu! Just a few tips for
-              ordering: Go for traditional
-              wings, rather than boneless (they’re more whole foods-based).</p>
-          </li>
-
-          <li id="menu-list">
-            <img src="./image/menu_img3.jpeg" alt="" id="menu-img">
-            <h4 id="menu-list-h4">California Pizza Kitchen</h4>
-            <p id="menu-list-p">Power Bowls that pair whole grains, veggies and protein. The Banh Mi Bowl tops quinoa
-              and baby kale with grilled
-              chicken, watermelon radishes, avocado, cucumbers, carrots, bean sprouts.</p>
           </li>
 
         </ul>
 
-    </section>
+      </div>
 
-    <!-- event with carousel -->
-    <div id="event">
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
+    </div>
+  </div>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <!-- <div class="numbertext">1 / 3</div> -->
-          <img src="./image/evt_img1.jpg" class="mySlide-img">
-          <div class="text">Bachelor Parties</div>
-        </div>
+  <!-- menu section -->
 
-        <div class="mySlides fade">
-          <!-- <div class="numbertext">2 / 3</div> -->
-          <img src="./image/evt_img2.jpg" class="mySlide-img">
-          <div class="text">Healthy Cocktail Parties</div>
-        </div>
+  <section id="menu">
+    <div class="row">
+      <ul>
 
-        <div class="mySlides fade">
-          <!-- <div class="numbertext">3 / 3</div> -->
-          <img src="./image/evt_img3.jpg" class="mySlide-img">
-          <div class="text">Healthy Eating Challenge</div>
-        </div>
+        <li id="menu-list">
+          <img src="./image/menu_img1.jpeg" alt="" id="menu-img">
+          <h4 id="menu-list-h4">Applebee's</h4>
+          <p id="menu-list-p"> For calorie-appropriate portions, look for Applebee's Lighter Fare, which are all under
+            700 calories per dish. Among the
+            options are Cedar-Grilled Lemon Chicken and Thai Shrimp Salad.</p>
+        </li>
 
-        <!-- Next and previous buttons -->
-        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <li id="menu-list">
+          <img src="./image/menu_img2.jpeg" alt="" id="menu-img">
+          <h4 id="menu-list-h4">Buffalo Wild Wings</h4>
+          <p id="menu-list-p">Lucky for you, they may just be the healthiest thing on the menu! Just a few tips for
+            ordering: Go for traditional
+            wings, rather than boneless (they’re more whole foods-based).</p>
+        </li>
+
+        <li id="menu-list">
+          <img src="./image/menu_img3.jpeg" alt="" id="menu-img">
+          <h4 id="menu-list-h4">California Pizza Kitchen</h4>
+          <p id="menu-list-p">Power Bowls that pair whole grains, veggies and protein. The Banh Mi Bowl tops quinoa
+            and baby kale with grilled
+            chicken, watermelon radishes, avocado, cucumbers, carrots, bean sprouts.</p>
+        </li>
+
+      </ul>
+
+  </section>
+
+  <!-- event with carousel -->
+  <div id="event">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <!-- <div class="numbertext">1 / 3</div> -->
+        <img src="./image/evt_img1.jpg" class="mySlide-img">
+        <div class="text">Bachelor Parties</div>
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <div class="numbertext">2 / 3</div> -->
+        <img src="./image/evt_img2.jpg" class="mySlide-img">
+        <div class="text">Healthy Cocktail Parties</div>
+      </div>
+
+      <div class="mySlides fade">
+        <!-- <div class="numbertext">3 / 3</div> -->
+        <img src="./image/evt_img3.jpg" class="mySlide-img">
+        <div class="text">Healthy Eating Challenge</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
 
-      </div>
-
     </div>
 
-    <br>
+  </div>
 
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
 
-    <!--  Footer section -->
+  <!--  Footer section -->
 
-    <footer>
-      <div class="footer">
+  <footer>
+    <div class="footer">
 
-        <div class="row">
-          <ul class=" footer-icon">
-            <li class="footer-icon-li"><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li class="footer-icon-li"><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li class="footer-icon-li"><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li class="footer-icon-li"><a href="#"><i class="fa fa-envelope"></i></a></li>
+      <div class="row">
+        <ul class=" footer-icon">
+          <li class="footer-icon-li"><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="footer-icon-li"><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li class="footer-icon-li"><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="footer-icon-li"><a href="#"><i class="fa fa-envelope"></i></a></li>
 
-          </ul>
-        </div>
-
-        <div class="row">
-          <ul class="footer-ul">
-            <li class="footer-li"><a href="#">Contact us</a></li>
-            <li class="footer-li"><a href="#">Our Services</a></li>
-            <li class="footer-li"><a href="#">Privacy Policy</a></li>
-            <li class="footer-li"><a href="#">Terms & Conditions</a></li>
-
-          </ul>
-        </div>
-
-        <div class="row copyright">
-          copyright &copy; 2023 || All rights reserved
-        </div>
+        </ul>
       </div>
-    </footer>
+
+      <div class="row">
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="#">Contact us</a></li>
+          <li class="footer-li"><a href="#">Our Services</a></li>
+          <li class="footer-li"><a href="#">Privacy Policy</a></li>
+          <li class="footer-li"><a href="#">Terms & Conditions</a></li>
+
+        </ul>
+      </div>
+
+      <div class="row copyright">
+        copyright &copy; 2023 || All rights reserved
+      </div>
+    </div>
+  </footer>
 
 
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
