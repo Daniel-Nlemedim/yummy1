@@ -1,10 +1,12 @@
 "use strict";
+document.addEventListener('DOMContentLoaded', function(){
+const btnOpenModal = document.querySelector('.show-modal');
+const modal = document.querySelector('.modal');
+const hidden = document.querySelector('.hidden');
+const btnCloseModal = document.querySelector('.close-modal');
+const overlay = document.querySelector('.overlay');
 
-const btnOpenModal = document.querySelector(".show-modal");
-const modal = document.querySelector(".modal");
-const hidden = document.querySelector(".hidden");
-const btnCloseModal = document.querySelector(".close-modal");
-const overlay = document.querySelector(".overlay");
+
 
 //function
 const openModal = function () {
@@ -20,6 +22,7 @@ const closeModal = function () {
 btnOpenModal.addEventListener("click", openModal);
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+});
 
 //for the slide show
 let slideIndex = 0;
