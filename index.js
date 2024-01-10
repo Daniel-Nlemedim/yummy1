@@ -1,27 +1,36 @@
 "use strict";
-document.addEventListener('DOMContentLoaded', function(){
-const btnOpenModal = document.querySelector('.show-modal');
-const modal = document.querySelector('.modal');
-const hidden = document.querySelector('.hidden');
-const btnCloseModal = document.querySelector('.close-modal');
-const overlay = document.querySelector('.overlay');
+document.addEventListener("DOMContentLoaded", function () {
+  const btnOpenModal = document.querySelector(".show-modal");
+  const modal = document.querySelector(".modal");
+  const hidden = document.querySelector(".hidden");
+  const btnCloseModal = document.querySelector(".close-modal");
+  const overlay = document.querySelector(".overlay");
+  const copyYear = document.querySelector(".copy-year");
 
+  //function
+  const openModal = function () {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
 
+  const closeModal = function () {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+  };
 
-//function
-const openModal = function () {
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
+  btnOpenModal.addEventListener("click", openModal);
+  btnCloseModal.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
 
-const closeModal = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-};
+  const calcYear = function(){
+    const currentDate = new Date();
 
-btnOpenModal.addEventListener("click", openModal);
-btnCloseModal.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
+    const year = currentDate.getFullYear();
+
+    copyYear.textContent = year;
+  }
+  calcYear();
+
 });
 
 //for the slide show
