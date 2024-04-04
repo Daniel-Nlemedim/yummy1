@@ -35,7 +35,7 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01" class="navbar ">
       <!-- ms-auto was used to push the nav-link away from the navbar-brand -->
-      <ul class="navbar-nav ms-auto ">
+      <ul class="navbar-nav ms-auto nav__link">
         <li class="navbar-item dropdown">
           <a class="nav-link" href="#section">Home</a>
           <div class="dropdown-content">
@@ -72,12 +72,7 @@
         world. We serve
         top class delicacy, <br> and mouth watery meals.</p>
 
-      <button id="btn2" class="show-modal"> Book a Table</button>
-      <div class="modal hidden ">
-        <button class="close-modal">&times; </button>
-        <p>checking modal</p>
-      </div>
-      <div class="overlay hidden"></div>
+      <button id= 'btn2' class = 'btn--show-modal'>Book a table</button>
 
       <i class="fa fa-play-circle-o " id="font btn2"> Watch video</i>
 
@@ -234,6 +229,24 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal hidden">
+    <button class="btn--close-modal">&times;</button>
+    <h2 class="modal__header">
+      Open your bank account <br />
+      in just <span class="highlight">5 minutes</span>
+    </h2>
+    <form class="modal__form">
+      <label>first Name</label>
+      <input type="text" placeholder="firstname" />
+      <label>Last Name</label>
+      <input type="text" placeholder="lastname" />
+      <label>Email Address</label>
+      <input type="email" placeholder="enter you email address" />
+      <button class="btn">Next step &rarr;</button>
+    </form>
+  </div>
+  <div class="overlay hidden"></div>
 
 
   <script src="./index.js"></script>
