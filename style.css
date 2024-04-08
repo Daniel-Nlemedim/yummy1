@@ -14,11 +14,11 @@
   font-size: 30px;
 }
 
-.sticky{
+.sticky {
   position: fixed;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.719);
-width: 100%;
+  width: 100%;
 }
 
 ul {
@@ -499,7 +499,6 @@ p {
   opacity: 0;
 }
 
-
 /* Drop-down */
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
@@ -549,10 +548,8 @@ p {
 
   .navbar {
     text-align: center;
-
   }
-  .nav-link{
- 
+  .nav-link {
     right: auto;
   }
   #img1 {
