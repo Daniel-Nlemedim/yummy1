@@ -92,16 +92,6 @@ nav.addEventListener("mouseout", function (e) {
   }
 });
 
-//////////////////////////////////////
-//copyright year 
-const calcYear = function () {
-  const currentDate = new Date();
-
-  const year = currentDate.getFullYear();
-
-  copyYear.textContent = year;
-};
-calcYear();
 
 //////////////////////////////////////
 //sticky navigation
@@ -114,3 +104,14 @@ window.addEventListener('scroll', function(){
     nav.classList.remove('sticky')
   }
 })
+
+//////////////////////////////////////
+//copyright year 
+const calcYear = function () {
+  const currentDate = new Date();
+
+  const year = currentDate.getFullYear();
+
+  copyYear.textContent = year;
+};
+calcYear();
