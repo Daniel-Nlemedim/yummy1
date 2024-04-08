@@ -14,6 +14,13 @@
   font-size: 30px;
 }
 
+.sticky{
+  position: fixed;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.719);
+width: 100%;
+}
+
 ul {
   padding: 20px;
 }

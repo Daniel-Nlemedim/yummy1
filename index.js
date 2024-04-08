@@ -1,13 +1,14 @@
 "use strict";
-
-const copyYear = document.querySelector(".copy-year");
-
-//function
-
+const nav = document.querySelector(".navbar");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".btn--close-modal");
 const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
+const section1 = document.querySelector(".firstCoord");
+const copyYear = document.querySelector(".copy-year");
+
+//function
+
 
 const openModal = function (e) {
   e.preventDefault();
@@ -33,15 +34,8 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-const calcYear = function () {
-  const currentDate = new Date();
 
-  const year = currentDate.getFullYear();
-
-  copyYear.textContent = year;
-};
-calcYear();
-
+//////////////////////////////////////
 //for the slide show
 let slideIndex = 0;
 showSlides();
@@ -60,6 +54,8 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
+//////////////////////////////////////
+//nav smooth scrolling
 document.querySelector(".nav__link").addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("nav-link")) {
@@ -70,8 +66,6 @@ document.querySelector(".nav__link").addEventListener("click", function (e) {
 
 //////////////////////////////////////
 //menu fade animation
-const nav = document.querySelector(".navbar");
-
 nav.addEventListener("mouseover", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const link = e.target;
@@ -89,7 +83,7 @@ nav.addEventListener("mouseout", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const link = e.target;
     const siblings = link.closest(".navbar").querySelectorAll(".nav-link");
-
+    
     siblings.forEach((el) => {
       if (el !== link) {
         el.style.opacity = 1;
@@ -98,3 +92,25 @@ nav.addEventListener("mouseout", function (e) {
   }
 });
 
+//////////////////////////////////////
+//copyright year 
+const calcYear = function () {
+  const currentDate = new Date();
+
+  const year = currentDate.getFullYear();
+
+  copyYear.textContent = year;
+};
+calcYear();
+
+//////////////////////////////////////
+//sticky navigation
+const initialCoordinates = section1.getBoundingClientRect();
+console.log(initialCoordinates)
+window.addEventListener('scroll', function(){
+  if(this.window.scrollY > initialCoordinates.top){
+    nav.classList.add('sticky')
+  }else{
+    nav.classList.remove('sticky')
+  }
+})
