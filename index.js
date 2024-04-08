@@ -66,5 +66,35 @@ document.querySelector(".nav__link").addEventListener("click", function (e) {
     const id = e.target.getAttribute("href");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
-  console.log('click',e.target)
 });
+
+//////////////////////////////////////
+//menu fade animation
+const nav = document.querySelector(".navbar");
+
+nav.addEventListener("mouseover", function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const link = e.target;
+    const siblings = link.closest(".navbar").querySelectorAll(".nav-link");
+
+    siblings.forEach((el) => {
+      if (el !== link) {
+        el.style.opacity = 0.5;
+      }
+    });
+  }
+});
+
+nav.addEventListener("mouseout", function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const link = e.target;
+    const siblings = link.closest(".navbar").querySelectorAll(".nav-link");
+
+    siblings.forEach((el) => {
+      if (el !== link) {
+        el.style.opacity = 1;
+      }
+    });
+  }
+});
+

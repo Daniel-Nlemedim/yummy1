@@ -30,7 +30,7 @@ a {
 }
 a:hover {
   color: black;
-  text-decoration: underline rgba(172, 30, 30, 0.897) 2px;
+  text-decoration: underline rgba(172, 30, 30, 0.897) 1px;
 }
 
 #btn {
@@ -542,6 +542,11 @@ p {
 
   .navbar {
     text-align: center;
+
+  }
+  .nav-link{
+ 
+    right: auto;
   }
   #img1 {
     margin-right: 20px;
