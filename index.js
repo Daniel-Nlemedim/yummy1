@@ -9,7 +9,6 @@ const copyYear = document.querySelector(".copy-year");
 
 //function
 
-
 const openModal = function (e) {
   e.preventDefault();
   modal.classList.remove("hidden");
@@ -33,7 +32,6 @@ document.addEventListener("keydown", function (e) {
     closeModal();
   }
 });
-
 
 //////////////////////////////////////
 //for the slide show
@@ -83,7 +81,7 @@ nav.addEventListener("mouseout", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const link = e.target;
     const siblings = link.closest(".navbar").querySelectorAll(".nav-link");
-    
+
     siblings.forEach((el) => {
       if (el !== link) {
         el.style.opacity = 1;
@@ -92,21 +90,20 @@ nav.addEventListener("mouseout", function (e) {
   }
 });
 
-
 //////////////////////////////////////
 //sticky navigation
 const initialCoordinates = section1.getBoundingClientRect();
-console.log(initialCoordinates)
-window.addEventListener('scroll', function(){
-  if(this.window.scrollY > initialCoordinates.top){
-    nav.classList.add('sticky')
-  }else{
-    nav.classList.remove('sticky')
+console.log(initialCoordinates);
+window.addEventListener("scroll", function () {
+  if (this.window.scrollY > initialCoordinates.top) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
   }
-})
+});
 
 //////////////////////////////////////
-//copyright year 
+//copyright year
 const calcYear = function () {
   const currentDate = new Date();
 
