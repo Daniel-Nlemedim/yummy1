@@ -23,45 +23,47 @@
 <body>
 
   <!-- Nav Bar -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light navigation ">
+      <a class="navbar-brand"><i class="fa fa-tint"></i> Yummy<span id="dot">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="sidebar"
+        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
 
-  <nav class="navbar navbar-expand-lg navbar-light navigation ">
-    <a class="navbar-brand"><i class="fa fa-tint"></i> Yummy<span id="dot">.</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="sidebar"
-      data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-      </span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01" class="navbar ">
+        <!-- ms-auto was used to push the nav-link away from the navbar-brand -->
+        <ul class="navbar-nav ms-auto nav__link">
+          <li class="navbar-item dropdown">
+            <a class="nav-link" href="#section">Home</a>
+            <div class="dropdown-content">
+              <!-- <a href="#">testing dropdown menu</a> -->
+            </div>
+          </li>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" class="navbar ">
-      <!-- ms-auto was used to push the nav-link away from the navbar-brand -->
-      <ul class="navbar-nav ms-auto nav__link">
-        <li class="navbar-item dropdown">
-          <a class="nav-link" href="#section">Home</a>
-          <div class="dropdown-content">
-            <a href="#">testing dropdown menu</a>
-          </div>
-        </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="#main-card-div">About</a>
+          </li>
+          <li navbar-item>
+            <a class="nav-link" href="#menu-list"> Menu</a>
+          </li>
+          <li navbar-item>
+            <a class="nav-link" href="#event"> Event</a>
+          </li>
+          <li navbar-item>
+            <a class="nav-link" href="#"> Chefs</a>
+          </li>
+          <li navbar-item>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
 
-        <li class="navbar-item">
-          <a class="nav-link" href="#main-card-div">About</a>
-        </li>
-        <li navbar-item>
-          <a class="nav-link" href="#menu-list"> Menu</a>
-        </li>
-        <li navbar-item>
-          <a class="nav-link" href="#event"> Event</a>
-        </li>
-        <li navbar-item>
-          <a class="nav-link" href="#"> Chefs</a>
-        </li>
-        <li navbar-item>
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
+        </ul>
+      </div>
+    </nav>
 
-      </ul>
-    </div>
-  </nav>
+  </header>
 
 
   <div id="content">
@@ -72,7 +74,7 @@
         world. We serve
         top class delicacy, <br> and mouth watery meals.</p>
 
-      <button id= 'btn2' class = 'btn--show-modal'>Book a table</button>
+      <button id='btn2' class='btn--show-modal'>Book a table</button>
 
       <i class="fa fa-play-circle-o " id="font btn2"> Watch video</i>
 
@@ -80,7 +82,7 @@
 
   </div>
 
-  <div class="firstCoord" id="main-card-div">
+  <div class="firstCoord section" id="main-card-div">
 
     <div id="card">
       <p id="card-p">ABOUT US</p>
@@ -90,8 +92,8 @@
         <ul>
 
           <li id="container-list">
-            <img src="./image/img2.jpg" alt="photo" id="container-img">
-            <h4 id="container1-h4"><b>Wooden inspired concept</b></h4>
+            <img class="lazy-img" src=" ./image/img2.jpg" alt="photo" id="container-img">
+            <h4 id=" container1-h4"><b>Wooden inspired concept</b></h4>
             <p id="container1-p">Califonia, USA.
               <br>
               <i class="fa fa-phone"> +123-082237432, Andre.</i>
@@ -99,7 +101,7 @@
           </li>
 
           <li id="container-list">
-            <img src="./image/img3.jpg" alt="photo" id="container-img">
+            <img class="lazy-img" src="./image/img3.jpg" alt="photo" id="container-img">
             <h4 id="container1-h4"><b> Modern inspired concept</b></h4>
             <p id="container1-p">Louisiana, USA.
               <br>
@@ -108,7 +110,7 @@
           </li>
 
           <li id="container-list">
-            <img src="./image/img4.png" alt="photo" id="container-img">
+            <img class="lazy-img" src="./image/img4.png" alt="photo" id="container-img">
             <h4 id="container1-h4"><b>An Italian inspired concept</b></h4>
             <p id="container1-p">Milian, Italy.
               <br>
@@ -125,7 +127,7 @@
 
   <!-- menu section -->
 
-  <section id="menu">
+  <section class="section" id="menu">
     <div class="row">
       <ul>
 
@@ -158,7 +160,7 @@
   </section>
 
   <!-- event with carousel -->
-  <div id="event">
+  <div class="section" id="event">
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
@@ -202,7 +204,7 @@
   <!--  Footer section -->
 
   <footer>
-    <div class="footer">
+    <div class="footer section">
 
       <div class="row">
         <ul class=" footer-icon">

@@ -1,4 +1,5 @@
 "use strict";
+const header = document.querySelector(".header");
 const nav = document.querySelector(".navbar");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
@@ -92,15 +93,37 @@ nav.addEventListener("mouseout", function (e) {
 
 //////////////////////////////////////
 //sticky navigation
-const initialCoordinates = section1.getBoundingClientRect();
-console.log(initialCoordinates);
-window.addEventListener("scroll", function () {
-  if (this.window.scrollY > initialCoordinates.top) {
+// const initialCoordinates = section1.getBoundingClientRect();
+// console.log(initialCoordinates);
+// window.addEventListener("scroll", function () {
+//   if (this.window.scrollY > initialCoordinates.top) {
+//     nav.classList.add("sticky");
+//   } else {
+//     nav.classList.remove("sticky");
+//   }
+// });
+
+//////////////////////////////////////
+//stickyNav with intersectionAPI
+const navHeight = section1.getBoundingClientRect().height;
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
     nav.classList.add("sticky");
   } else {
     nav.classList.remove("sticky");
   }
-});
+};
+
+const obsOption = {
+  root: null,
+  threshold: 0,
+  rootMargin: `${navHeight}px`,
+};
+const headerObserver = new IntersectionObserver(stickyNav, obsOption);
+headerObserver.observe(header);
+
 
 //////////////////////////////////////
 //copyright year
@@ -112,3 +135,27 @@ const calcYear = function () {
   copyYear.textContent = year;
 };
 calcYear();
+
+//lazy img**
+navHeight;
+const allImages = document.querySelectorAll(".lazy-img");
+
+const loadObserver = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy-img");
+  });
+
+  observer.unobserve(entry.target);
+};
+const loadOption = {
+  root: null,
+  threshold: 0,
+};
+const imageObserver = new IntersectionObserver(loadObserver, loadOption);
+
+allImages.forEach((img) => {
+  imageObserver.observe(img);
+});
