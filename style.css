@@ -183,7 +183,7 @@ p {
 }
 
 #container-img {
-  height: 5%;
+  height: auto;
   width: 104.85%;
   border-radius: 5px 5px 0 0;
 }
