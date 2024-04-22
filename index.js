@@ -92,6 +92,14 @@ nav.addEventListener("mouseout", function (e) {
 });
 
 //////////////////////////////////////
+//smooth scrolling to section
+const btnScrollTo = document.querySelector(".btn--scroll-to");
+btnScrollTo.addEventListener("click", function (e) {
+  section1.getBoundingClientRect();
+  section1.scrollIntoView({ behavior: "smooth" });
+});
+
+//////////////////////////////////////
 //sticky navigation
 // const initialCoordinates = section1.getBoundingClientRect();
 // console.log(initialCoordinates);

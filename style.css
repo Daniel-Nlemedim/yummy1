@@ -48,26 +48,6 @@ a:hover {
   text-decoration: underline rgba(172, 30, 30, 0.897) 1px;
 }
 
-#btn {
-  padding-top: 10px;
-  padding-bottom: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 20px;
-  border: none;
-  color: white;
-  background: linear-gradient(
-    to right,
-    rgb(88, 88, 158),
-    rgba(175, 162, 162, 0.315)
-  );
-  margin-left: 30px;
-  font-size: 20px;
-}
-#btn:hover {
-  background-color: rgba(172, 30, 30, 0.897);
-}
-
 #content {
   margin-top: -10px;
   background-color: rgba(175, 162, 162, 0.315);
@@ -96,26 +76,26 @@ p {
   font-weight: bold;
 }
 
-#btn2 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 20px;
+.btn--text {
+  background: none;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  color:  rgb(105, 98, 98);
   border: none;
-  color: white;
-  background: linear-gradient(
-    to right,
-    rgb(88, 88, 158),
-    rgba(175, 162, 162, 0.315)
-  );
-  margin-top: 15px;
-  margin-left: 20px;
-  font-size: 20px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding-left: 20px;
+  
 }
-
-#btn2:hover {
-  background-color: rgba(172, 30, 30, 0.897);
+.down_arrow {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.down_arrow:hover {
+  top: -10px;
 }
 
 #font {
