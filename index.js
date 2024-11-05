@@ -49,7 +49,7 @@ nav.addEventListener("mouseover", function (e) {
     });
   }
 });
-
+//reduced opacity of sibling element when one is active
 nav.addEventListener("mouseout", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const link = e.target;
