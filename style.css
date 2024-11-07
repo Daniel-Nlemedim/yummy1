@@ -92,25 +92,9 @@ p {
 .down_arrow {
   position: relative;
   top: 0;
-  font:40px;
+  font-size: 20px;
   transition: top ease 0.5s;
-  animation: bounce 2s infinite ease;
 }
-@keyframes bounce{
-  0%, 25%, 55%, 75%, 100%{
-    transform: translateY(0);
-  }
-  45%{
-    transform: translateY(-20px);
-  }
-  65%{
-    transform: translateY(-10px);
-  }
-  85%{
-    transform: translateY(-5px);
-  }
- 
-  }
 
 .down_arrow:hover {
   top: -10px;
