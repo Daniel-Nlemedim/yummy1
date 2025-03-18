@@ -6,24 +6,6 @@ const copyYear = document.querySelector(".copy-year");
 
 //function
 
-//////////////////////////////////////
-//for the slide show
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
 
 //////////////////////////////////////
 //nav smooth scrolling
@@ -41,7 +23,7 @@ nav.addEventListener("mouseover", function (e) {
   if (e.target.classList.contains("nav-link")) {
     const link = e.target;
     const siblings = link.closest(".navbar").querySelectorAll(".nav-link");
-
+    
     siblings.forEach((el) => {
       if (el !== link) {
         el.style.opacity = 0.5;
@@ -121,15 +103,15 @@ const allImages = document.querySelectorAll(".lazy-img");
 
 const loadObserver = function (entries, observer) {
   const [entry] = entries;
-
+  
   if (!entry.isIntersecting) return;
-
+  
   entry.target.src = entry.target.dataset.src;
-
+  
   entry.target.addEventListener("load", function () {
     entry.target.classList.remove("lazy-img");
   });
-
+  
   observer.unobserve(entry.target);
 };
 const loadOption = {
@@ -141,3 +123,22 @@ const imageObserver = new IntersectionObserver(loadObserver, loadOption);
 allImages.forEach((img) => {
   imageObserver.observe(img);
 });
+
+//////////////////////////////////////
+//for the slide show
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}

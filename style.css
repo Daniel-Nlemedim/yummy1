@@ -260,7 +260,7 @@ p {
   max-width: 100px;
   position: relative;
   margin-top: 30px;
-  margin-left: 150px;
+  margin-left: 350px;
 }
 
 /* Hide the images by default */
@@ -545,6 +545,13 @@ p {
     padding-left: 10px;
     line-height: 1.3rem;
   }
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 100px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 150px;
+}
   .mySlide-img {
     width: 190px;
     margin-left: -50px;
