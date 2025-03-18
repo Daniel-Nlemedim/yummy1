@@ -550,7 +550,7 @@ p {
   max-width: 100px;
   position: relative;
   margin-top: 30px;
-  margin-left: 150px;
+  margin-left: 170px;
 }
   .mySlide-img {
     width: 190px;
@@ -558,4 +558,22 @@ p {
     text-align: center;
     scroll-behavior: none;
   }
+}
+
+.typewriter{
+  /* display: flex; */
+  /* margin-inline: auto; */
+  overflow: hidden;
+  white-space: nowrap;
+  /* border-right: 1px solid; */
+  animation: typing 4s steps(121);
+}
+
+@keyframes typing{
+from{
+  width:0
+}
+to{
+  width: 100%;
+}
 }
